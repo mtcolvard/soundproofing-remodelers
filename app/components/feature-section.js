@@ -18,7 +18,7 @@ const features = [
   {
     name: 'Compliance Reports',
     description:
-      'Acoustical testing, design services, and compliance reports to satisfy Title 25 and Section 1207 of the California State Building Code.',
+      'Acoustical testing, design services, and compliance reports satisfying Title 25 and Section 1207 of the California State Building Code.',
     href: '#',
     icon: DocumentMagnifyingGlassIcon,
   },
@@ -26,7 +26,7 @@ const features = [
 
 export default function FeatureSection() {
   return (
-    <div className="font-sans bg-zinc-50 py-24 sm:py-32">
+    <div className="font-sans bg-zinc-50 py-32 ">
       <div className=" mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">We provide</h2>

@@ -13,11 +13,11 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-const roboto_mono = Roboto_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-roboto-mono',
-});
+// const roboto_mono = Roboto_Mono({
+//   subsets: ['latin'],
+//   display: 'swap',
+//   variable: '--font-roboto-mono',
+// });
 
 const ysabeau = Ysabeau({
   subsets: ['latin'],
@@ -27,7 +27,8 @@ const ysabeau = Ysabeau({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${roboto_mono.variable} ${ysabeau.variable}`}>
+    <html lang="en" className={`${inter.variable} ${ysabeau.variable}`}>
+      {/* <html lang="en" className={`${inter.variable} ${roboto_mono.variable} ${ysabeau.variable}`}> */}
       <body>{children}</body>
     </html>
   );
