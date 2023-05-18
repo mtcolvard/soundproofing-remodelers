@@ -422,14 +422,12 @@ export default function Example() {
                 alt=""
                 className="h-full w-full object-cover object-center"
               />
-              {/* <img
-                src="https://tailwindui.com/img/ecommerce-images/home-page-02-hero-half-width.jpg"
-                alt=""
-                className="h-full w-full object-cover object-center"
-              /> */}
             </div>
           </div>
         </div>
+        {/* Features */}
+        <FeatureSection />
+
         {/* Collections */}
         <section aria-labelledby="collections-heading" className="bg-gray-100">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
