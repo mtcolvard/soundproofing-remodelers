@@ -4,6 +4,7 @@ import Link from 'next/link'
 import MainHero from './components/main-hero'
 import FeatureSection from './components/feature-section'
 import handHalfStandard from 'public/handHalfStandard.webp'
+import builderAbove from 'public/builderAbove.webp'
 
 
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
@@ -125,14 +126,14 @@ const testimonials = [
   {
     id: 1,
     quote:
-    'Other contractor\’s consultations consisted of measuring the space and pointing out noises that could improve. Lee was the only one who pointed out structural quirks that could mean underlying complications. I appreciated the crew\'s attention to detail vs. rushing to meet a deadline. Our old building was far from a straightforward job, but Lee\'s decades of experience showed, and I don\'t think I would\'ve felt so confident or at ease with anyone else.',
-    attribution: 'Tianyu I. San Francisco',
+    'Alongside his technical and City Planning Department expertise, Lee is great with communication. With our project, we split our payments based on completion benchmarks, and he served as the coordinator between the structural engineer, city planning department, building inspector, and his construction crew. And what a finished product! Lee and his team did an absolutely amazing job.',
+    attribution: 'Adele F. San Francisco',
   },
   {
     id: 2,
     quote:
-    'Alongside his technical and City Planning Department expertise, Lee is great with communication. With our project, we split our payments based on completion benchmarks, and he served as the coordinator between the structural engineer, city planning department, building inspector, and his construction crew. And what a finished product! Lee and his team did an absolutely amazing job.',
-    attribution: 'Adele F. San Francisco',
+    'Other contractor\’s consultations consisted of measuring the space and pointing out noises that could improve. Lee was the only one who pointed out structural quirks that could mean underlying complications. I appreciated the crew\'s attention to detail vs. rushing to meet a deadline. Our old building was far from a straightforward job, but Lee\'s decades of experience showed, and I don\'t think I would\'ve felt so confident or at ease with anyone else.',
+    attribution: 'Tianyu I. San Francisco',
   },
   {
     id: 3,
@@ -195,9 +196,9 @@ export default function Example() {
             <div aria-hidden="true" className="absolute hidden h-full w-1/2 bg-gray-100 lg:block" />
             <div className="relative bg-gray-100 lg:bg-transparent">
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:px-8">
-                <div className="mx-auto max-w-2xl py-24 lg:max-w-none lg:py-64">
+                <div className="mx-auto max-w-2xl py-12 lg:max-w-none lg:py-64">
                   <div className="font-serif lg:pr-16">
-                    <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl xl:text-5xl">
+                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl xl:text-6xl">
                       Soundproofing Remodelers
                     </h1>
                     <p className="mt-4 lg:mb-16 lg:pb-9 text-xl text-gray-600">
@@ -220,74 +221,35 @@ export default function Example() {
         {/* Features */}
         <FeatureSection />
 
-        {/* Collections */}
-        <section aria-labelledby="collections-heading" className="bg-gray-100">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-              <h2 id="collections-heading" className="text-2xl font-bold text-gray-900">
-                Collections
-              </h2>
-
-              <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-                {collections.map((collection) => (
-                  <div key={collection.name} className="group relative">
-                    <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                      <img
-                        src={collection.imageSrc}
-                        alt={collection.imageAlt}
-                        className="h-full w-full object-cover object-center"
-                      />
-                    </div>
-                    <h3 className="mt-6 text-sm text-gray-500">
-                      <a href={collection.href}>
-                        <span className="absolute inset-0" />
-                        {collection.name}
-                      </a>
-                    </h3>
-                    <p className="text-base font-semibold text-gray-900">{collection.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Sale and testimonials */}
         <div className="relative overflow-hidden">
           {/* Decorative background image and gradient */}
           <div aria-hidden="true" className="absolute inset-0">
-            <div className="absolute inset-0 mx-auto max-w-7xl overflow-hidden xl:px-8">
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/home-page-02-sale-full-width.jpg"
+            <div className="absolute inset-0 mx-auto  overflow-hidden">
+              <Image
+                src={builderAbove}
                 alt=""
-                className="h-full w-full object-cover object-center"
+                className=" w-full object-cover object-center"
               />
             </div>
-            <div className="absolute inset-0 bg-white bg-opacity-75" />
-            <div className="absolute inset-0 bg-gradient-to-t from-white via-white" />
+            <div className="absolute inset-0 bg-white bg-opacity-20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-white " />
           </div>
 
           {/* Sale */}
-          <section
+          {/* <section
             aria-labelledby="sale-heading"
             className="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8"
           >
             <div className="mx-auto max-w-2xl lg:max-w-none">
               <h2 id="sale-heading" className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-                Get 25% off during our one-time sale
+                Achieve the noise reduction you need
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-xl text-gray-600">
-                Most of our products are limited releases that won't come back. Get your favorite items while they're in
-                stock.
+                How can you know you will be getting your money’s worth to achieve the noise reduction you need?
               </p>
-              <a
-                href="#"
-                className="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 px-8 py-3 font-medium text-white hover:bg-gray-800 sm:w-auto"
-              >
-                Get access to our one-time sale
-              </a>
             </div>
-          </section>
+          </section> */}
 
           {/* Testimonials */}
           <section
@@ -299,7 +261,7 @@ export default function Example() {
                 What are people saying?
               </h2>
 
-              <div className="mt-16 space-y-16 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
+              <div className="mt-16 pt-8 space-y-16 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
                 {testimonials.map((testimonial) => (
                   <blockquote key={testimonial.id} className="sm:flex lg:block">
                     <svg
@@ -307,7 +269,7 @@ export default function Example() {
                       height={18}
                       viewBox="0 0 24 18"
                       aria-hidden="true"
-                      className="flex-shrink-0 text-gray-300"
+                      className="flex-shrink-0 text-gray-400"
                     >
                       <path
                         d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z"
@@ -315,7 +277,7 @@ export default function Example() {
                       />
                     </svg>
                     <div className="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-10">
-                      <p className="text-lg text-gray-600">{testimonial.quote}</p>
+                      <p className="text-lg text-gray-800">{testimonial.quote}</p>
                       <cite className="mt-4 block font-semibold not-italic text-gray-900">
                         {testimonial.attribution}
                       </cite>
@@ -327,6 +289,41 @@ export default function Example() {
           </section>
         </div>
       </main>
+
+
+
+      {/* Collections */}
+      <section aria-labelledby="collections-heading" className="bg-gray-100">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+            <h2 id="collections-heading" className="text-2xl font-bold text-gray-900">
+              Collections
+            </h2>
+
+            <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+              {collections.map((collection) => (
+                <div key={collection.name} className="group relative">
+                  <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                    <img
+                      src={collection.imageSrc}
+                      alt={collection.imageAlt}
+                      className="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <h3 className="mt-6 text-sm text-gray-500">
+                    <a href={collection.href}>
+                      <span className="absolute inset-0" />
+                      {collection.name}
+                    </a>
+                  </h3>
+                  <p className="text-base font-semibold text-gray-900">{collection.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <footer aria-labelledby="footer-heading" className="bg-white">
         <h2 id="footer-heading" className="sr-only">

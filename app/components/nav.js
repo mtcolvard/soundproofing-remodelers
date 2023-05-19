@@ -20,28 +20,40 @@ const services = [
   {
     name: 'Consultations',
     description:
-      'On-site consultations to assess optimal soundproofing remedies to meet your personal and budget particular needs.',
+      'On-site evaluations of optimal soundproofing remedies',
     href: '/services/#consultations',
     icon: ChatBubbleLeftRightIcon,
   },
   {
     name: 'Installation & Remodeling',
     description:
-      'Extensive experience mitigating noise in single & multifamily homes, mixed-use developments, and commercial properties.',
+      'Single, Multifamily, Mixed-use & Commercial Properties',
+      // 'Extensive experience mitigating noise in single & multifamily homes, mixed-use developments, and commercial properties.',
     href: '/services/#installation',
     icon: WrenchScrewdriverIcon,
   },
   {
-    name: 'Compliance Reports',
+    name: 'Compliance Services',
     description:
-      'Acoustical testing, design services, and compliance reports satisfying Title 25 and Section 1207 of the California State Building Code.',
+      // <>
+      //   <p>Acoustical Testing,</p>
+      //   <p>Design Services, </p>
+      //   <p>& Compliance Reports</p>
+      // </>,
+    'Acoustical Testing, Design & Compliance Reports',
+      // 'Acoustical testing, design services, and compliance reports satisfying Title 25 and Section 1207 of the California State Building Code.',
     href: '/services/#compliance',
     icon: DocumentMagnifyingGlassIcon,
   },
   {
     name: 'Social Services',
     description:
-      'Mediation between sensitive parties; legal consultations in special situations. Escrow Evaluations & Real Estate Noise Audits.',
+      // <>
+      //  <p>Sensitive mediations</p>
+      //   <p>Legal consultations</p>
+      //   <p>Escrow evaluations</p >
+      // </>,
+      'Mediation, Legal Consultations & Escrow Evaluations',
     // 'Sensitive mediation between parties; legal consultations in special situations, as well as escrow evaluations and real estate noise audits.',
     href: '/services/#socialservices',
     icon: ShareIcon,
@@ -62,7 +74,7 @@ export default function Nav() {
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Soundproofing Remodelers</span>
-            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=sky&shade=600" alt="" />
           </Link>
         </div>
         <div className="flex lg:hidden">
