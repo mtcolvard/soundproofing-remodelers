@@ -1,4 +1,4 @@
-import { ChatBubbleLeftRightIcon, WrenchScrewdriverIcon, DocumentMagnifyingGlassIcon, PuzzlePieceIcon, ScaleIcon, ShareIcon } from '@heroicons/react/24/solid'
+import { ChatBubbleLeftRightIcon, WrenchScrewdriverIcon, DocumentMagnifyingGlassIcon, ShareIcon } from '@heroicons/react/24/solid'
 import { Share } from 'next/font/google'
 
 

@@ -1,34 +1,11 @@
-"use client"
-
+'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 import MainHero from './components/main-hero'
 import FeatureSection from './components/feature-section'
-import Testimonials from './components/testimonials'
-import heroGlove from '../public/heroGlove.webp'
-import heroGloveText from '../public/heroGloveText.webp'
-import heroGloveMobile from '../public/heroGloveMobile.webp'
-import heroGloveHalfPage from 'public/heroGloveHalfPage.webp'
-import heroGloveHalfPage2 from 'public/heroGloveHalfPage2.webp'
-
 import handHalfStandard from 'public/handHalfStandard.webp'
 
 
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
-import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingCartIcon, UserIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -143,26 +120,29 @@ const collections = [
     href: '#',
   },
 ]
+
 const testimonials = [
   {
     id: 1,
     quote:
-      'My order arrived super quickly. The product is even better than I hoped it would be. Very happy customer over here!',
-    attribution: 'Sarah Peters, New Orleans',
+    'Other contractor\’s consultations consisted of measuring the space and pointing out noises that could improve. Lee was the only one who pointed out structural quirks that could mean underlying complications. I appreciated the crew\'s attention to detail vs. rushing to meet a deadline. Our old building was far from a straightforward job, but Lee\'s decades of experience showed, and I don\'t think I would\'ve felt so confident or at ease with anyone else.',
+    attribution: 'Tianyu I. San Francisco',
   },
   {
     id: 2,
     quote:
-      'I had to return a purchase that didn’t fit. The whole process was so simple that I ended up ordering two new items!',
-    attribution: 'Kelly McPherson, Chicago',
+    'Alongside his technical and City Planning Department expertise, Lee is great with communication. With our project, we split our payments based on completion benchmarks, and he served as the coordinator between the structural engineer, city planning department, building inspector, and his construction crew. And what a finished product! Lee and his team did an absolutely amazing job.',
+    attribution: 'Adele F. San Francisco',
   },
   {
     id: 3,
     quote:
-      'Now that I’m on holiday for the summer, I’ll probably order a few more shirts. It’s just so convenient, and I know the quality will always be there.',
-    attribution: 'Chris Paul, Phoenix',
+      'Lee helped me to understand how to approach my noise problem, as my woodworking studio and house kitchen share a common wall. He gave me such a good education that I started an incremental approach myself. I purchased exactly the materials I needed, and didn\'t waste a penny on anything I didn\'t. Most importantly, Lee kept me from pursuing techniques that wouldn\'t have worked nearly as well. Lee was a pleasure to work with and took an active interest in my project. Highly recommended.',
+      // 'I used Lee as a consultant to understand how to approach my noise problem; my woodworking studio and our house kitchen share a common door. He gave me such a good education that I started an incremental approach myself.\n It turned out to be an enormous bargain. I purchased exactly the materials I needed, and didn\'t waste a penny on anything I didn\'t. Perhaps most importantly, Lee kept me from pursuing techniques that wouldn\'t have worked nearly as well. Lee was a pleasure to work with and took an active interest in my project. Highly recommended.',
+    attribution: 'Jon A. Cupertino',
   },
 ]
+
 const footerNavigation = {
   products: [
     { name: 'Bags', href: '#' },
@@ -206,196 +186,8 @@ function classNames(...classes) {
 }
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
     <div className="bg-white">
-      {/* Mobile menu */}
-      <Transition.Root show={mobileMenuOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-40 lg:hidden" onClose={setMobileMenuOpen}>
-          <Transition.Child
-            as={Fragment}
-            enter="transition-opacity ease-linear duration-300"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="transition-opacity ease-linear duration-300"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <div className="fixed inset-0 bg-black bg-opacity-25" />
-          </Transition.Child>
-
-          <div className="fixed inset-0 z-40 flex">
-            <Transition.Child
-              as={Fragment}
-              enter="transition ease-in-out duration-300 transform"
-              enterFrom="-translate-x-full"
-              enterTo="translate-x-0"
-              leave="transition ease-in-out duration-300 transform"
-              leaveFrom="translate-x-0"
-              leaveTo="-translate-x-full"
-            >
-              <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
-                <div className="flex px-4 pb-2 pt-5">
-                  <button
-                    type="button"
-                    className="-m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    <span className="sr-only">Close menu</span>
-                    <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-                  </button>
-                </div>
-
-                {/* Links */}
-                <Tab.Group as="div" className="mt-2">
-                  <div className="border-b border-gray-200">
-                    <Tab.List className="-mb-px flex space-x-8 px-4">
-                      {navigation.categories.map((category) => (
-                        <Tab
-                          key={category.name}
-                          className={({ selected }) =>
-                            classNames(
-                              selected ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-gray-900',
-                              'flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium'
-                            )
-                          }
-                        >
-                          {category.name}
-                        </Tab>
-                      ))}
-                    </Tab.List>
-                  </div>
-                  <Tab.Panels as={Fragment}>
-                    {navigation.categories.map((category, categoryIdx) => (
-                      <Tab.Panel key={category.name} className="space-y-12 px-4 pb-6 pt-10">
-                        <div className="grid grid-cols-1 items-start gap-x-6 gap-y-10">
-                          <div className="grid grid-cols-1 gap-x-6 gap-y-10">
-                            <div>
-                              <p id={`mobile-featured-heading-${categoryIdx}`} className="font-medium text-gray-900">
-                                Featured
-                              </p>
-                              <ul
-                                role="list"
-                                aria-labelledby={`mobile-featured-heading-${categoryIdx}`}
-                                className="mt-6 space-y-6"
-                              >
-                                {category.featured.map((item) => (
-                                  <li key={item.name} className="flex">
-                                    <a href={item.href} className="text-gray-500">
-                                      {item.name}
-                                    </a>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                            <div>
-                              <p id="mobile-categories-heading" className="font-medium text-gray-900">
-                                Categories
-                              </p>
-                              <ul role="list" aria-labelledby="mobile-categories-heading" className="mt-6 space-y-6">
-                                {category.categories.map((item) => (
-                                  <li key={item.name} className="flex">
-                                    <a href={item.href} className="text-gray-500">
-                                      {item.name}
-                                    </a>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          </div>
-                          <div className="grid grid-cols-1 gap-x-6 gap-y-10">
-                            <div>
-                              <p id="mobile-collection-heading" className="font-medium text-gray-900">
-                                Collection
-                              </p>
-                              <ul role="list" aria-labelledby="mobile-collection-heading" className="mt-6 space-y-6">
-                                {category.collection.map((item) => (
-                                  <li key={item.name} className="flex">
-                                    <a href={item.href} className="text-gray-500">
-                                      {item.name}
-                                    </a>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-
-                            <div>
-                              <p id="mobile-brand-heading" className="font-medium text-gray-900">
-                                Brands
-                              </p>
-                              <ul role="list" aria-labelledby="mobile-brand-heading" className="mt-6 space-y-6">
-                                {category.brands.map((item) => (
-                                  <li key={item.name} className="flex">
-                                    <a href={item.href} className="text-gray-500">
-                                      {item.name}
-                                    </a>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </Tab.Panel>
-                    ))}
-                  </Tab.Panels>
-                </Tab.Group>
-
-                <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                  {navigation.pages.map((page) => (
-                    <div key={page.name} className="flow-root">
-                      <a href={page.href} className="-m-2 block p-2 font-medium text-gray-900">
-                        {page.name}
-                      </a>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                  <div className="flow-root">
-                    <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
-                      Create an account
-                    </a>
-                  </div>
-                  <div className="flow-root">
-                    <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
-                      Sign in
-                    </a>
-                  </div>
-                </div>
-
-                <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                  {/* Currency selector */}
-                  <form>
-                    <div className="inline-block">
-                      <label htmlFor="mobile-currency" className="sr-only">
-                        Currency
-                      </label>
-                      <div className="group relative -ml-2 rounded-md border-transparent focus-within:ring-2 focus-within:ring-white">
-                        <select
-                          id="mobile-currency"
-                          name="currency"
-                          className="flex items-center rounded-md border-transparent bg-none py-0.5 pl-2 pr-5 text-sm font-medium text-gray-700 focus:border-transparent focus:outline-none focus:ring-0 group-hover:text-gray-800"
-                        >
-                          {currencies.map((currency) => (
-                            <option key={currency}>{currency}</option>
-                          ))}
-                        </select>
-                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
-                          <ChevronDownIcon className="h-5 w-5 text-gray-500" aria-hidden="true" />
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </Dialog.Panel>
-            </Transition.Child>
-          </div>
-        </Dialog>
-      </Transition.Root>
-
-
-
       <main>
         {/* Hero */}
         <div className="flex flex-col border-b border-gray-200 lg:border-0">
@@ -405,7 +197,7 @@ export default function Example() {
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:px-8">
                 <div className="mx-auto max-w-2xl py-24 lg:max-w-none lg:py-64">
                   <div className="font-serif lg:pr-16">
-                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl xl:text-6xl">
+                    <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl xl:text-5xl">
                       Soundproofing Remodelers
                     </h1>
                     <p className="mt-4 lg:mb-16 lg:pb-9 text-xl text-gray-600">

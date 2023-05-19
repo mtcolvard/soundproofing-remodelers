@@ -55,3 +55,4 @@
 // }
 
 
+<meta property="og:image" content="http://bayareanoisecontrol.com/soundproofing/wp-content/uploads/2014/04/logo.jpg"></meta>

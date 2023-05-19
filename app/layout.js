@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter, Roboto_Mono, Ysabeau } from 'next/font/google';
+import Nav from './components/nav.js'
 
 export const metadata = {
   title: 'Soundproofing Remodelers',
@@ -29,7 +30,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${ysabeau.variable}`}>
       {/* <html lang="en" className={`${inter.variable} ${roboto_mono.variable} ${ysabeau.variable}`}> */}
-      <body>{children}</body>
+      <body>
+        <header>
+          <Nav />
+        </header>
+        {children}
+      </body>
     </html>
   );
 }
