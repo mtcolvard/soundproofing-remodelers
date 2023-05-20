@@ -28,33 +28,20 @@ const services = [
     name: 'Installation & Remodeling',
     description:
       'Single, Multifamily, Mixed-use & Commercial Properties',
-      // 'Extensive experience mitigating noise in single & multifamily homes, mixed-use developments, and commercial properties.',
     href: '/services/#installation',
     icon: WrenchScrewdriverIcon,
   },
   {
     name: 'Compliance Services',
     description:
-      // <>
-      //   <p>Acoustical Testing,</p>
-      //   <p>Design Services, </p>
-      //   <p>& Compliance Reports</p>
-      // </>,
     'Acoustical Testing, Design & Compliance Reports',
-      // 'Acoustical testing, design services, and compliance reports satisfying Title 25 and Section 1207 of the California State Building Code.',
     href: '/services/#compliance',
     icon: DocumentMagnifyingGlassIcon,
   },
   {
     name: 'Social Services',
     description:
-      // <>
-      //  <p>Sensitive mediations</p>
-      //   <p>Legal consultations</p>
-      //   <p>Escrow evaluations</p >
-      // </>,
       'Mediation, Legal Consultations & Escrow Evaluations',
-    // 'Sensitive mediation between parties; legal consultations in special situations, as well as escrow evaluations and real estate noise audits.',
     href: '/services/#socialservices',
     icon: ShareIcon,
   },
@@ -71,12 +58,6 @@ export default function Nav() {
   return (
     <header className="relative isolate z-10 bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
-          <Link href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Soundproofing Remodelers</span>
-            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=sky&shade=600" alt="" />
-          </Link>
-        </div>
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -86,6 +67,12 @@ export default function Nav() {
             <span className="sr-only">Open main menu</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
+        </div>
+        <div className="flex  lg:flex-1">
+          <Link href="#" className="-m-1.5 p-1.5">
+            <span className="sr-only">Soundproofing Remodelers</span>
+            <img className="sm:max-md:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=sky&shade=600" alt="" />
+          </Link>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           
@@ -109,7 +96,7 @@ export default function Nav() {
                   {services.map((item) => (
                     <div key={item.name} className="group relative rounded-lg p-6 text-sm leading-6 hover:bg-gray-50">
                       <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-yellow-400" aria-hidden="true" />
                       </div>
                       <Link href={item.href} className="mt-6 block font-semibold text-gray-900">
                         {item.name}
@@ -132,24 +119,16 @@ export default function Nav() {
             Contact
           </Link>
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            {/* Log in <span aria-hidden="true">&rarr;</span> */}
+            Log in <span aria-hidden="true">&rarr;</span>
           </Link>
-        </div>
+        </div> */}
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Soundproofing Remodelers</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
-            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -158,6 +137,14 @@ export default function Nav() {
               <span className="sr-only">Close menu</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
+            <Link href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Soundproofing Remodelers</span>
+              <img
+                className="h-8 w-auto"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                alt=""
+              />
+            </Link>
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
