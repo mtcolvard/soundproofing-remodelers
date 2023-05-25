@@ -56,8 +56,10 @@ const features = [
 export default function Example() {
   return (
     <main className="overflow-hidden bg-gray-100 py-12 sm:py-24">
-      {features.map((feature) => (
-        <ServicesFeature feature={feature} />
+      {features.map((feature, index) => (
+        <ServicesFeature
+          key={index}
+          feature={feature} />
       ))}
     </main>
   )
