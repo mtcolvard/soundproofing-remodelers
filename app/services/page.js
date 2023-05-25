@@ -56,9 +56,9 @@ const features = [
 export default function Example() {
   return (
     <main className="overflow-hidden bg-gray-100 py-12 sm:py-24">
-      {features.map((feature, index) => (
+      {features.map((feature) => (
         <ServicesFeature
-          key={index}
+          key={feature.id}
           feature={feature} />
       ))}
     </main>
@@ -67,14 +67,14 @@ export default function Example() {
 
 function ServicesFeature({ feature }) {
   return (
-    <div id={feature.id}  className="mx-auto mb-24 max-w-7xl px-6 lg:px-8">
+    <div   className="mx-auto mb-24 max-w-7xl px-6 lg:px-8">
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:gap-x-16 lg:mx-0 lg:max-w-none lg:grid-cols-5">
         <div className="lg:col-span-2 lg:pr-8 lg:pt-4">
           <div className="lg:max-w-lg">
             <div className="mx-auto max-w-2xl py-12 lg:max-w-none lg:py-24">
               <div className="font-serif lg:pr-16">
                 <dl className="">
-                    <div key={feature.name} className="flex flex-col">
+                    <div className="flex flex-col">
                       <dt className=" font-semibold text-3xl lg:text-4xl leading-7 text-gray-900">
                         <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-yellow-400">
                           <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
