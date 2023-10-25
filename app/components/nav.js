@@ -70,7 +70,7 @@ export default function Nav() {
         </div>
         <div className="flex  lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Soundproofing Remodelers</span>
+            <span className="sr-only">Gulf Coast Soundproofing Remodelers</span>
             <img className="sm:max-md:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=sky&shade=600" alt="" />
           </Link>
         </div>
