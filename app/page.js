@@ -199,10 +199,10 @@ export default function Example() {
                 <div className="mx-auto max-w-2xl py-12 lg:max-w-none lg:py-64">
                   <div className="font-serif lg:pr-16">
                     <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl xl:text-6xl">
-                      Soundproofing Remodelers
+                      Gulf Coast Noise Control
                     </h1>
                     <p className="mt-4 lg:mb-16 lg:pb-9 text-xl text-gray-600">
-                      Serving the San Francisco Bay Area since 1998
+                      Serving the Greater Houston Area since 2023
                     </p>
                     
                   </div>
@@ -306,7 +306,7 @@ export default function Example() {
 
           <div className="py-10 md:flex md:items-center md:justify-between">
             <div className="text-center md:text-left">
-              <p className="text-sm text-gray-500">&copy; Brenner 2023 All Rights Reserved</p>
+              <p className="text-sm text-gray-500">&copy; Colvard/Brenner 2023 All Rights Reserved</p>
             </div>
 
             <div className="mt-4 flex items-center justify-center md:mt-0">
