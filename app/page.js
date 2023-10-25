@@ -126,19 +126,19 @@ const testimonials = [
   {
     id: 1,
     quote:
-    'Alongside his technical and City Planning Department expertise, Lee is great with communication. With our project, we split our payments based on completion benchmarks, and he served as the coordinator between the structural engineer, city planning department, building inspector, and his construction crew. And what a finished product! Lee and his team did an absolutely amazing job.',
+    'Alongside their technical and City Planning Department expertise, Lee and Matty are great with communication. With our project, we split our payments based on completion benchmarks, and they served as the coordinators between the structural engineer, city planning department, building inspector, and his construction crew. And what a finished product! Lee and Matty\'s his team did an absolutely amazing job.',
     attribution: 'Adele F. San Francisco',
   },
   {
     id: 2,
     quote:
-    'Other contractor\’s consultations consisted of measuring the space and pointing out noises that could improve. Lee was the only one who pointed out structural quirks that could mean underlying complications. I appreciated the crew\'s attention to detail vs. rushing to meet a deadline. Our old building was far from a straightforward job, but Lee\'s decades of experience showed, and I don\'t think I would\'ve felt so confident or at ease with anyone else.',
+    'Other contractor\’s consultations consisted of measuring the space and pointing out noises that could improve. Lee and Matty were the only one who pointed out structural quirks that could mean underlying complications. I appreciated their crew\'s attention to detail vs. rushing to meet a deadline. Our old building was far from a straightforward job, but thier decades of experience showed, and I don\'t think I would\'ve felt so confident or at ease with anyone else.',
     attribution: 'Tianyu I. San Francisco',
   },
   {
     id: 3,
     quote:
-      'Lee helped me to understand how to approach my noise problem, as my woodworking studio and house kitchen share a common wall. He gave me such a good education that I started an incremental approach myself. I purchased exactly the materials I needed, and didn\'t waste a penny on anything I didn\'t. Most importantly, Lee kept me from pursuing techniques that wouldn\'t have worked nearly as well. Lee was a pleasure to work with and took an active interest in my project. Highly recommended.',
+      'Lee and Matty helped me to understand how to approach my noise problem, as my woodworking studio and house kitchen share a common wall. They gave me such a good education that I started an incremental approach myself. I purchased exactly the materials I needed, and didn\'t waste a penny on anything I didn\'t. Most importantly, they kept me from pursuing techniques that wouldn\'t have worked nearly as well. Lee and Matthew were a pleasure to work with and took an active interest in my project. Highly recommended.',
       // 'I used Lee as a consultant to understand how to approach my noise problem; my woodworking studio and our house kitchen share a common door. He gave me such a good education that I started an incremental approach myself.\n It turned out to be an enormous bargain. I purchased exactly the materials I needed, and didn\'t waste a penny on anything I didn\'t. Perhaps most importantly, Lee kept me from pursuing techniques that wouldn\'t have worked nearly as well. Lee was a pleasure to work with and took an active interest in my project. Highly recommended.',
     attribution: 'Jon A. Cupertino',
   },

@@ -15,16 +15,16 @@ export default function About() {
               <div className="mx-auto max-w-2xl py-12 lg:max-w-none lg:pb-72 lg:pt-12">
                 <div className="font-serif lg:pr-36">
                   <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl xl:text-5xl">
-                    Soundproofing Remodelers
+                    Gulf Coast Noise Control. Your Soundproofing Remodelers.
                   </h1>
                   <p className="mt-4 lg:mb-16 lg:pb-9 text-xl text-gray-600">
-                    Serving the San Francisco Bay Area since 1998
+                    Serving the Houston Bay Area since 2023
                   </p>
                   <p className="mt-4 text-xl text-gray-600">
-                    Telephone: 415-308-8989
+                    Telephone: 415-632-9331
                   </p>
                   <p className="mt-4 text-xl text-gray-600">
-                    Email: lee@bayareanoisecontrol.com
+                    Email: matthew.colvard@gmail.com
                   </p>
                 </div>
               </div>

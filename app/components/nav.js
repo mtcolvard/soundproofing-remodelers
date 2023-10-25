@@ -138,7 +138,7 @@ export default function Nav() {
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
             <Link href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Soundproofing Remodelers</span>
+              <span className="sr-only">Gulf Coast Noise Control and Soundproofing Remodelers</span>
               <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
