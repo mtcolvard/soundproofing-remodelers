@@ -23,7 +23,7 @@ export default function About() {
                   <p className="text-xl text-gray-600">Recognizing the scarcity of resources for addressing everyday noise problems, they developed a commitment to improving the quality of life of those inundated by noise in high density urban environments.</p>
                   <br />
                   <p className="text-xl text-gray-600">As the business grew, we began to recognize that advice alone was not sufficient.
-                    In order to ensure the proper installation of specialty soundproofing materials in the greater Houston area, Gulf Coast Noise Control \/ Soundproofing Remodelers began operations in 2023.</p>
+                    In order to ensure the proper installation of specialty soundproofing materials in the greater Houston area, Gulf Coast Noise Control / Soundproofing Remodelers began operations in 2023constrct.</p>
 
 
                 </div>

@@ -24,7 +24,7 @@ export default function About() {
                     Telephone: 415-632-9331
                   </p>
                   <p className="mt-4 text-xl text-gray-600">
-                    Email: matthew.colvard@gmail.com
+                    Email: lee@bayareanoisecontrol.com
                   </p>
                 </div>
               </div>

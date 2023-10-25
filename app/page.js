@@ -126,7 +126,7 @@ const testimonials = [
   {
     id: 1,
     quote:
-    'Alongside their technical and City Planning Department expertise, Lee and Matty are great with communication. With our project, we split our payments based on completion benchmarks, and they served as the coordinators between the structural engineer, city planning department, building inspector, and their construction crew. And what a finished product! Lee and Matty\'s  team did an absolutely amazing job.',
+    'Alongside their Technical, and City Planning department expertise, Lee and Matty are great with communication. With our project, we split our payments based on completion benchmarks, and they served as the coordinators between the structural engineer, city planning department, building inspector, and their construction crew. And what a finished product! Lee and Matty\'s  team did an absolutely amazing job.',
     attribution: 'Adele F. Montrose',
   },
   {
